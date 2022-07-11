@@ -8,11 +8,13 @@ function rot13(str) {
         position = charCode + 13;
 
         if (position > 90) {
-            position = (65 + (13 - 90 - charCode))
+            position -= 91
+            position += 65
         }
+        decript += String.fromCharCode(position);
     }
 
-    return String.fromCharCode(position);
+    return decript;
 }
 
 export default rot13;
