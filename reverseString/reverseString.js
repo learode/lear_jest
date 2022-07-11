@@ -1,3 +1,3 @@
- (function reverseStr(str) {
-    console.log(str.split("").reverse().join(","));
-})('str')
+ export default function reverseStr(str) {
+    return (str.split("").reverse().join(""));
+};
